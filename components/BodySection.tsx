@@ -1,19 +1,19 @@
-import { useEffect, useState } from 'react'
+import { FaCalendarCheck, FaClock, FaRecordVinyl, FaPeopleGroup } from "react-icons/fa6";
 import { Typewriter } from 'react-simple-typewriter'
 const BodySection = () => {
     const handleType = (count: number) => { }
     const handleDone = () => { }
 
     return (
-        <div className="flex flex-col justify-center items-center w-screen h-screen bg-gradient-to-r from-fuchsia-600 to-purple-600">
-            <h1 className="w-5/6 h-[200px] md:h-[120px] mt-[100px] md:mt-[100px] md:w-4/6 text-5xl md:text-6xl font-thin">
+        <div className="flex flex-col justify-center items-center w-screen md:h-screen h-full pt-36 bg-gradient-to-r from-fuchsia-600 to-purple-600">
+            <h1 className="w-5/6 h-[200px] md:h-[120px] md:w-4/6 text-5xl md:text-6xl font-thin">
                 <Typewriter
                     words={['AIvolution: Journey into the future of work']}
-                    loop={5}
+                    loop={true}
                     cursor
                     cursorStyle='_'
-                    typeSpeed={70}
-                    deleteSpeed={50}
+                    typeSpeed={100}
+                    deleteSpeed={100}
                     delaySpeed={1000}
                     onLoopDone={handleDone}
                     onType={handleType}
@@ -24,25 +24,25 @@ const BodySection = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 pt-4 md:pt-24">
                 <div className='flex flex-col items-center py-2 px-4 md:px-8'>
                     <div className="w-[36px] h-[36px] bg-white flex items-center justify-center">
-                        <img src="/static/calendar.png" />
+                        <FaCalendarCheck className="text-purple-600" />
                     </div>
                     <div className="py-2 text-xs text-center">August 3rd, 2023</div>
                 </div>
                 <div className='flex flex-col items-center py-2 px-4 md:px-8'>
                     <div className="w-[36px] h-[36px] bg-white flex items-center justify-center">
-                        <img src="/static/calendar.png" />
+                        <FaClock className="text-purple-600" />
                     </div>
-                    <div className="py-2 text-xs text-center">Starting from 3pm</div>
+                    <div className="py-2 text-xs text-center">Starting from 3PM</div>
                 </div>
                 <div className='flex flex-col items-center py-2 px-4 md:px-8'>
                     <div className="w-[36px] h-[36px] bg-white flex items-center justify-center">
-                        <img src="/static/calendar.png" />
+                        <FaRecordVinyl className="text-purple-600" />
                     </div>
                     <div className="py-2 text-xs text-center">Zoom Meeting</div>
                 </div>
                 <div className='flex flex-col items-center py-2 px-4 md:px-8'>
                     <div className="w-[36px] h-[36px] bg-white flex items-center justify-center">
-                        <img src="/static/calendar.png" />
+                        <FaPeopleGroup className="text-purple-600" />
                     </div>
                     <div className="py-2 text-xs text-center">Students of RIC ICT</div>
                 </div>

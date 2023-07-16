@@ -20,7 +20,7 @@ const Home = () => {
       <Header />
       <BodySection />
       <SpeakerSection />
-      <VisitUsSection />
+      {/* <VisitUsSection /> */}
       <Footer />
     </>
   )

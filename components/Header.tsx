@@ -47,11 +47,13 @@ const Header = () => {
             </Link>
             <div className="flex items-center justify-center">
                 <div className="px-4 md:text-lg text-xs font-thin bg-gradient-to-r from-fuchsia-600 to-purple-600 bg-clip-text text-transparent">
-                    {days} days, {formatTime(hours)}:{formatTime(minutes)}:{formatTime(seconds)}
+                    {days} days, {formatTime(hours)}:{formatTime(minutes)}:{formatTime(seconds)} left
                 </div>
-                <div className="w-[100px] h-[44px] flex justify-center items-center cursor-pointer text-white bg-gradient-to-r from-fuchsia-600 to-purple-600">
-                    <p>Register</p>
-                </div>
+                <Link href="https://docs.google.com/forms/d/e/1FAIpQLSceHVhWmMEt7q0QCV26JXP9lfRsFyF7WPI-4sY-IMW2cMl7-Q/viewform" target="_blank">
+                    <div className="w-[100px] h-[44px] flex justify-center items-center cursor-pointer text-white bg-gradient-to-r from-fuchsia-600 to-purple-600">
+                        <p>Register</p>
+                    </div>
+                </Link>
             </div>
         </div>
     )

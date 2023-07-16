@@ -9,8 +9,11 @@ const SpeakerSection = () => {
                     <div className="h-[300px] w-full object-contain flex items-center justify-center ">
                         <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Fpolitical-elections%2F50%2F48-512.png&f=1&nofb=1&ipt=4fde3b611b5251e90b49d10d2e93fef9642679d093a7a94031558b187bb38b77&ipo=images" width={200} height={200} style={{ objectFit: "cover" }} alt="speaker-profile" />
                     </div>
-                    <p className="text-4xl">Mr. Voreh Uddom Pang</p>
-                    <p className="text-lg">SWE and Founder of e-learning platform</p>
+                    <p className="text-4xl text-center leading-10">Mr. Voreh Uddom Pang</p>
+                    <p className="text-2xl text-center leading-10">SWE and Founder of e-learning platform</p>
+                    {/* <p className="text-lg leading-10">
+                        Mr. Uddom Pang is a 19-year-old Cambodian student pursuing a bachelor's degree in Computer Science in Australia. He embarked on his programming and new technologies content creation journey, starting with tutorials on how to develop tools for downloading YouTube videos using Python programming language. Over time, he gained experience in the programming field through internships and freelancing projects for small businesses. As his experience and audience grew, he launched his own e-learning website, "https://www.uddompang.com/," offering beginner and intermediate programming courses.
+                    </p> */}
                 </div>
                 <div className="flex-col my-2 md:my mx-0 md:mx-4 justify-center items-start text-white bg-gradient-to-r from-fuchsia-600 to-purple-600 p-8 shadow-lg">
                     <div className="h-[300px] w-full object-contain flex items-center justify-center ">
