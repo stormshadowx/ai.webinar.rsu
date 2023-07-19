@@ -23,28 +23,28 @@ const BodySection = () => {
             <p className='w-5/6 md:pt-[24px] pt-4 md:w-4/6 md:text-lg text-xs leading-8 text-white'>Don't miss this opportunity to gain expert knowledge and explore the potential of AI in shaping your professional landscape and earn our e-certificate. Scan Registration QR code below to secure your spot!.</p>
             <div className="grid grid-cols-2 md:grid-cols-4 pt-4 md:pt-24">
                 <div className='flex flex-col items-center py-2 px-4 md:px-8'>
-                    <div className="w-[36px] h-[36px] bg-white flex items-center justify-center">
-                        <FaCalendarCheck className="text-purple-600" />
+                    <div className="w-[48px] h-[48px] md:w-[60px] md:h-[60px] bg-white flex items-center justify-center">
+                        <FaCalendarCheck className="text-purple-600 w-[24px] h-[24px] md:w-[28px] md:h-[28px]" />
                     </div>
-                    <div className="py-2 text-xs text-center">August 3rd, 2023</div>
+                    <div className="py-2 text-sm md:text-lg text-center">August 3rd, 2023</div>
                 </div>
                 <div className='flex flex-col items-center py-2 px-4 md:px-8'>
-                    <div className="w-[36px] h-[36px] bg-white flex items-center justify-center">
-                        <FaClock className="text-purple-600" />
+                    <div className="w-[48px] h-[48px] md:w-[60px] md:h-[60px] bg-white flex items-center justify-center">
+                        <FaClock className="text-purple-600 w-[24px] h-[24px] md:w-[28px] md:h-[28px]" />
                     </div>
-                    <div className="py-2 text-xs text-center">Starting from 3PM</div>
+                    <div className="py-2 text-sm md:text-lg text-center">Starting from 3PM</div>
                 </div>
                 <div className='flex flex-col items-center py-2 px-4 md:px-8'>
-                    <div className="w-[36px] h-[36px] bg-white flex items-center justify-center">
-                        <FaRecordVinyl className="text-purple-600" />
+                    <div className="w-[48px] h-[48px] md:w-[60px] md:h-[60px] bg-white flex items-center justify-center">
+                        <FaRecordVinyl className="text-purple-600 w-[24px] h-[24px] md:w-[28px] md:h-[28px]" />
                     </div>
-                    <div className="py-2 text-xs text-center">Zoom Meeting</div>
+                    <div className="py-2 text-sm md:text-lg text-center">Zoom Meeting</div>
                 </div>
                 <div className='flex flex-col items-center py-2 px-4 md:px-8'>
-                    <div className="w-[36px] h-[36px] bg-white flex items-center justify-center">
-                        <FaPeopleGroup className="text-purple-600" />
+                    <div className="w-[48px] h-[48px] md:w-[60px] md:h-[60px] bg-white flex items-center justify-center">
+                        <FaPeopleGroup className="text-purple-600 w-[24px] h-[24px] md:w-[28px] md:h-[28px]" />
                     </div>
-                    <div className="py-2 text-xs text-center">Students of RIC ICT</div>
+                    <div className="py-2 text-sm md:text-lg text-center">Students of RIC ICT</div>
                 </div>
             </div>
         </div>
