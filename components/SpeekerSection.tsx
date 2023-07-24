@@ -4,8 +4,22 @@ import { useRouter } from "next/router";
 const SpeakerSection = () => {
 
     const speakerList = [
-        { id: 1, paths: "speaker1", speakerName: "Mr. Voreh Uddom Pang", position: "SWE and Founder of e-learning platform", description: "Mr. Uddom Pang is a 19-year-old Cambodian student pursuing a bachelor's degree in Computer Science in Australia. He embarked on his programming and new technologies content creation journey, starting with tutorials on how to develop tools for downloading YouTube videos using Python programming language. Over time, he gained experience in the programming field through internships and freelancing projects for small businesses. As his experience and audience grew, he launched his own e-learning website, https://www.uddompang.com/, offering beginner and intermediate programming courses. Due to the popularity of OPENAI's ChatGPT, which unfortunately lacked support for Cambodia, he made the decision to develop a similar AI tool himself, specifically for Cambodians in the Khmer language.", profile: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Fpolitical-elections%2F50%2F48-512.png&f=1&nofb=1&ipt=4fde3b611b5251e90b49d10d2e93fef9642679d093a7a94031558b187bb38b77&ipo=images" },
-        { id: 2, paths: "speaker2", speakerName: "Comming Soon", position: "SWE and Founder of e-learning platform", description: "Mr. Uddom Pang is a 19-year-old Cambodian student pursuing a bachelor's degree in Computer Science in Australia. He embarked on his programming and new technologies content creation journey, starting with tutorials on how to develop tools for downloading YouTube videos using Python programming language. Over time, he gained experience in the programming field through internships and freelancing projects for small businesses. As his experience and audience grew, he launched his own e-learning website, https://www.uddompang.com/, offering beginner and intermediate programming courses. Due to the popularity of OPENAI's ChatGPT, which unfortunately lacked support for Cambodia, he made the decision to develop a similar AI tool himself, specifically for Cambodians in the Khmer language.", profile: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Fpolitical-elections%2F50%2F48-512.png&f=1&nofb=1&ipt=4fde3b611b5251e90b49d10d2e93fef9642679d093a7a94031558b187bb38b77&ipo=images" },
+        {
+            id: 1,
+            paths: "speaker1",
+            speakerName: "Mr. Suwannit Chareen",
+            position: "Senior Lecturer School of Computing Universiti Utara Malaysia",
+            description: "Suwannit Chareen Chit is a Lecturer at the School of Computing, Universiti Utara Malaysia. He received his Masters degree from The University of Queensland in 2004, specializing in Computer Networks. He also holds a Bachelor degree from Universiti utara Malaysia in 2002. Currently, Suwannit is pursuing his Ph.D in Murdoch University, Australia. Suwannit has taught courses at both Undergraduate and Post-Graduate levels. He was also instrumental to setting up the ITU-UUM Centre of Excellence. Suwannit's research interest includes Energy-Efficient Communication Protocols and Wireless Communication Technologies. His current research focusses on energy-efficient mobile devices and Wireless sensor Networks. Suwannit is also passionate about Rural ICT Development.",
+            profile: "/static/speaker/speaker1.png"
+        },
+        {
+            id: 2,
+            paths: "speaker2",
+            speakerName: "Mr. Voreh Uddom Pang",
+            position: "SWE and Founder of e-learning platform",
+            description: "Mr. Uddom Pang is a 19-year-old Cambodian student pursuing a bachelor's degree in Computer Science in Australia. He embarked on his programming and new technologies content creation journey, starting with tutorials on how to develop tools for downloading YouTube videos using Python programming language. Over time, he gained experience in the programming field through internships and freelancing projects for small businesses. As his experience and audience grew, he launched his own e-learning website, https://www.uddompang.com/, offering beginner and intermediate programming courses. Due to the popularity of OPENAI's ChatGPT, which unfortunately lacked support for Cambodia, he made the decision to develop a similar AI tool himself, specifically for Cambodians in the Khmer language.",
+            profile: "/static/speaker/speaker2.png"
+        },
     ]
     const { query } = useRouter();
 
@@ -34,8 +48,10 @@ const SpeakerSection = () => {
                                 <p className="text-2xl md:text-4xl font-semibold pb-6 text-center leading-10">{item.position}</p>
                                 <p className="text-xl md:text-2xl leading-10">{item.description}</p>
                             </div>
-                            <div className="w-1/2 flex justify-center items-center">
-                                <img src={item.profile} width={200} height={200} style={{ objectFit: "cover" }} alt="speaker-profile" />
+                            <div className="w-1/2 h-1/2 flex justify-center items-center ">
+                                {/* <div className="w-[400px] h-[300px] flex justify-center items-end bg-gradient-to-r from-fuchsia-600 to-purple-600"> */}
+                                <img src={item.profile} width={500} height={500} style={{ objectFit: "cover" }} alt="speaker-profile" />
+                                {/* </div> */}
                             </div>
                         </div>
                     )
