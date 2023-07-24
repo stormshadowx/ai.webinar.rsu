@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaCalendarCheck, FaClock, FaRecordVinyl, FaPeopleGroup } from "react-icons/fa6";
 import { Typewriter } from 'react-simple-typewriter'
 const BodySection = () => {
@@ -23,31 +24,34 @@ const BodySection = () => {
             <p className='w-5/6 md:pt-[24px] pt-4 md:w-4/6 md:text-lg text-xs leading-8 text-white'>Don't miss this opportunity to gain expert knowledge and explore the potential of AI in shaping your professional landscape and earn our e-certificate. Scan Registration QR code below to secure your spot!.</p>
             <div className="grid grid-cols-2 md:grid-cols-4 pt-4 md:pt-24">
                 <div className='flex flex-col items-center py-2 px-4 md:px-8'>
-                    <div className="w-[48px] h-[48px] md:w-[60px] md:h-[60px] bg-white flex items-center justify-center">
+                    <div className="w-[48px] h-[48px] md:w-[60px] md:h-[60px] bg-white flex items-center justify-center hover:opacity-80 cursor-pointer">
                         <FaCalendarCheck className="text-purple-600 w-[24px] h-[24px] md:w-[28px] md:h-[28px]" />
                     </div>
                     <div className="py-2 text-sm md:text-lg text-center">August 3rd, 2023</div>
                 </div>
                 <div className='flex flex-col items-center py-2 px-4 md:px-8'>
-                    <div className="w-[48px] h-[48px] md:w-[60px] md:h-[60px] bg-white flex items-center justify-center">
+                    <div className="w-[48px] h-[48px] md:w-[60px] md:h-[60px] bg-white flex items-center justify-center hover:opacity-80 cursor-pointer">
                         <FaClock className="text-purple-600 w-[24px] h-[24px] md:w-[28px] md:h-[28px]" />
                     </div>
                     <div className="py-2 text-sm md:text-lg text-center">Starting from 3PM</div>
                 </div>
                 <div className='flex flex-col items-center py-2 px-4 md:px-8'>
-                    <div className="w-[48px] h-[48px] md:w-[60px] md:h-[60px] bg-white flex items-center justify-center">
-                        <FaRecordVinyl className="text-purple-600 w-[24px] h-[24px] md:w-[28px] md:h-[28px]" />
-                    </div>
+                    <Link href="https://us06web.zoom.us/j/82492862691?pwd=djExUW9URVBkcml5Y3l4dks5TEtRZz09" target="_blank">
+                        <div className="w-[48px] h-[48px] md:w-[60px] md:h-[60px] bg-white flex items-center justify-center hover:opacity-80 cursor-pointer">
+                            <FaRecordVinyl className="text-purple-600 w-[24px] h-[24px] md:w-[28px] md:h-[28px]" />
+                        </div>
+                    </Link>
+
                     <div className="py-2 text-sm md:text-lg text-center">Zoom Meeting</div>
                 </div>
                 <div className='flex flex-col items-center py-2 px-4 md:px-8'>
-                    <div className="w-[48px] h-[48px] md:w-[60px] md:h-[60px] bg-white flex items-center justify-center">
+                    <div className="w-[48px] h-[48px] md:w-[60px] md:h-[60px] bg-white flex items-center justify-center hover:opacity-80 cursor-pointer">
                         <FaPeopleGroup className="text-purple-600 w-[24px] h-[24px] md:w-[28px] md:h-[28px]" />
                     </div>
                     <div className="py-2 text-sm md:text-lg text-center">Students of RIC ICT</div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 export default BodySection;
